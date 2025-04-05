@@ -98,3 +98,39 @@ Response:
     201 OK: Returns a list of all expense records.
 
     404 Internal Server Error: If there is an error retrieving the data.
+
+
+
+------------------------
+| Setup Instructions:- |
+------------------------
+
+-Clone the repository:
+
+    - git clone https://github.com/sofahoba/ExpenseTracker.git
+
+-Navigate to the project folder:
+
+    cd ExpenseTracker
+
+-Install dependencies using Maven:
+
+    mvn install
+
+-Configure MySQL Database:
+
+    Create a new database in MySQL (e.g., expense_tracker).
+
+    Update the application.properties file with your MySQL connection details:
+
+    spring.datasource.url=jdbc:mysql://localhost:3306/expense_tracker
+    spring.datasource.username=your_username
+    spring.datasource.password=your_password
+
+-Run the application:
+
+    mvn spring-boot:run
+
+-Access the application:
+
+    The backend will be running on http://localhost:8080.
